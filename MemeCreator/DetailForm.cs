@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace MemeCreator
 {
-	public partial class Form2 : Form
+	public partial class DetailForm : Form
 	{
 		bool isdragging = false;
 		Point delta = Point.Empty;
 		
 		
-		public Form2()
+		public DetailForm()
 		{
 			InitializeComponent();
 

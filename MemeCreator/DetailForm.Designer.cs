@@ -1,6 +1,6 @@
 ﻿namespace MemeCreator
 {
-	partial class Form2
+	partial class DetailForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailForm));
 			this.selectedMeme = new System.Windows.Forms.PictureBox();
 			this.Text_Top = new System.Windows.Forms.TextBox();
 			this.Text_bottom = new System.Windows.Forms.TextBox();

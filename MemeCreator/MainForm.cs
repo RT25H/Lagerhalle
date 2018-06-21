@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace MemeCreator
 {
-	public partial class Form1 : Form
+	public partial class MainForm : Form
 	{
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
 
@@ -66,7 +66,7 @@ namespace MemeCreator
 			var file = selectedItem.Tag.ToString();
 			var image = Image.FromFile(file);
 
-			var DetailForm = new Form2();
+			var DetailForm = new DetailForm();
 			DetailForm.MemeImage = image;
 			DetailForm.ShowDialog();
 		}
