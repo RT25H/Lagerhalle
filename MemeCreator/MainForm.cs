@@ -23,7 +23,8 @@ namespace MemeCreator
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			var files = Directory.GetFiles("Memes", "*.jpg");
+			var files = Directory.GetFiles("Memes", "*.jpg").ToList();
+			files.AddRange(Directory.GetFiles("Memes", "*.png"));
 
 			foreach (var file in files)
 			{
