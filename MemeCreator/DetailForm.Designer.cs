@@ -61,18 +61,20 @@
 			// 
 			// Text_Top
 			// 
-			this.Text_Top.Location = new System.Drawing.Point(51, 97);
+			this.Text_Top.Location = new System.Drawing.Point(56, 89);
+			this.Text_Top.Multiline = true;
 			this.Text_Top.Name = "Text_Top";
-			this.Text_Top.Size = new System.Drawing.Size(467, 31);
+			this.Text_Top.Size = new System.Drawing.Size(467, 132);
 			this.Text_Top.TabIndex = 3;
 			this.Text_Top.Tag = "";
 			this.Text_Top.TextChanged += new System.EventHandler(this.Text_Top_TextChanged);
 			// 
 			// Text_bottom
 			// 
-			this.Text_bottom.Location = new System.Drawing.Point(56, 360);
+			this.Text_bottom.Location = new System.Drawing.Point(51, 464);
+			this.Text_bottom.Multiline = true;
 			this.Text_bottom.Name = "Text_bottom";
-			this.Text_bottom.Size = new System.Drawing.Size(467, 31);
+			this.Text_bottom.Size = new System.Drawing.Size(467, 137);
 			this.Text_bottom.TabIndex = 4;
 			this.Text_bottom.TextChanged += new System.EventHandler(this.Text_bottom_TextChanged);
 			// 
@@ -88,7 +90,7 @@
 			// label2
 			// 
 			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(51, 314);
+			this.label2.Location = new System.Drawing.Point(46, 418);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(139, 23);
 			this.label2.TabIndex = 6;
@@ -96,7 +98,7 @@
 			// 
 			// ButtonSave
 			// 
-			this.ButtonSave.Location = new System.Drawing.Point(51, 621);
+			this.ButtonSave.Location = new System.Drawing.Point(51, 836);
 			this.ButtonSave.Name = "ButtonSave";
 			this.ButtonSave.Size = new System.Drawing.Size(170, 48);
 			this.ButtonSave.TabIndex = 7;
@@ -106,7 +108,7 @@
 			// 
 			// SizeBar_top
 			// 
-			this.SizeBar_top.Location = new System.Drawing.Point(120, 206);
+			this.SizeBar_top.Location = new System.Drawing.Point(115, 310);
 			this.SizeBar_top.Maximum = 100;
 			this.SizeBar_top.Minimum = 8;
 			this.SizeBar_top.Name = "SizeBar_top";
@@ -118,7 +120,7 @@
 			// 
 			// SizeBar_bottom
 			// 
-			this.SizeBar_bottom.Location = new System.Drawing.Point(120, 463);
+			this.SizeBar_bottom.Location = new System.Drawing.Point(120, 678);
 			this.SizeBar_bottom.Maximum = 100;
 			this.SizeBar_bottom.Minimum = 8;
 			this.SizeBar_bottom.Name = "SizeBar_bottom";
@@ -131,7 +133,7 @@
 			// 
 			this.SizeLabel_bottom.AutoSize = true;
 			this.SizeLabel_bottom.ForeColor = System.Drawing.Color.White;
-			this.SizeLabel_bottom.Location = new System.Drawing.Point(115, 424);
+			this.SizeLabel_bottom.Location = new System.Drawing.Point(115, 639);
 			this.SizeLabel_bottom.Name = "SizeLabel_bottom";
 			this.SizeLabel_bottom.Size = new System.Drawing.Size(173, 25);
 			this.SizeLabel_bottom.TabIndex = 11;
@@ -141,7 +143,7 @@
 			// 
 			this.SizeLabel_top.AutoSize = true;
 			this.SizeLabel_top.ForeColor = System.Drawing.Color.White;
-			this.SizeLabel_top.Location = new System.Drawing.Point(115, 155);
+			this.SizeLabel_top.Location = new System.Drawing.Point(110, 259);
 			this.SizeLabel_top.Name = "SizeLabel_top";
 			this.SizeLabel_top.Size = new System.Drawing.Size(138, 25);
 			this.SizeLabel_top.TabIndex = 12;
@@ -163,7 +165,6 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(536, 1354);
 			this.panel1.TabIndex = 13;
-			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			// 
 			// panel2
 			// 
@@ -182,9 +183,9 @@
 			this.Label_top.BorderSize = 2F;
 			this.Label_top.Font = new System.Drawing.Font("Impact", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Label_top.ForeColor = System.Drawing.Color.White;
-			this.Label_top.Location = new System.Drawing.Point(99, 88);
+			this.Label_top.Location = new System.Drawing.Point(83, 34);
 			this.Label_top.Name = "Label_top";
-			this.Label_top.Size = new System.Drawing.Size(762, 367);
+			this.Label_top.Size = new System.Drawing.Size(778, 367);
 			this.Label_top.TabIndex = 1;
 			this.Label_top.Text = "Topside";
 			this.Label_top.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -198,7 +199,7 @@
 			this.Label_bottom.BorderSize = 2F;
 			this.Label_bottom.Font = new System.Drawing.Font("Impact", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Label_bottom.ForeColor = System.Drawing.Color.White;
-			this.Label_bottom.Location = new System.Drawing.Point(99, 433);
+			this.Label_bottom.Location = new System.Drawing.Point(71, 437);
 			this.Label_bottom.Name = "Label_bottom";
 			this.Label_bottom.Size = new System.Drawing.Size(790, 393);
 			this.Label_bottom.TabIndex = 2;
@@ -208,7 +209,7 @@
 			this.Label_bottom.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label_bottom_MouseMove);
 			this.Label_bottom.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_bottom_MouseUp);
 			// 
-			// Form2
+			// DetailForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,7 +219,7 @@
 			this.Controls.Add(this.panel1);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "Form2";
+			this.Name = "DetailForm";
 			this.Text = "Meme Creator";
 			this.Load += new System.EventHandler(this.Form2_Load);
 			((System.ComponentModel.ISupportInitialize)(this.selectedMeme)).EndInit();

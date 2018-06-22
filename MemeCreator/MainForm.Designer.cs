@@ -63,7 +63,7 @@
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
 			this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
 			// 
-			// Form1
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,9 +71,10 @@
 			this.ClientSize = new System.Drawing.Size(1561, 1253);
 			this.Controls.Add(this.lstMemes);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "Form1";
+			this.Name = "MainForm";
 			this.Text = "Meme Creator";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.TextChanged += new System.EventHandler(this.MainForm_TextChanged);
 			this.ResumeLayout(false);
 
 		}

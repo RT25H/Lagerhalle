@@ -137,10 +137,7 @@ namespace MemeCreator
 			Label_bottom.Font = new Font(Label_bottom.Font.FontFamily, SizeBar_bottom.Value);
 		}
 
-		private void panel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
+		
 	}
 
 }

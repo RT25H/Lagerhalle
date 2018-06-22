@@ -92,7 +92,10 @@ namespace MemeCreator
 					continue;
 				}
 
+				var TargetFile = Path.Combine(Application.StartupPath, "Memes", Path.GetFileName(file));
 
+				if (!File.Exists(TargetFile))
+					File.Copy(file,TargetFile);
 
 				lstMemes.LargeImageList.Images.Add(image);
 
@@ -104,6 +107,11 @@ namespace MemeCreator
 				lstMemes.Items.Add(item);
 			}
 			
+		}
+
+		private void MainForm_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
